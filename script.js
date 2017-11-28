@@ -23,7 +23,9 @@ function showWeather(position) {
 
         var temp = document.getElementById("temp");
         temp.innerHTML = data.main.temp + 'C';
-        temp.innerHTML += '<br><button class="button" onclick="toggleUnits()">Toggle F/C</button><br>';
+
+        var toggler = document.getElementById("toggler");
+        toggler.innerHTML += '<button class="button" onclick="toggleUnits()">Toggle F/C</button><br>';
 
         var loc = document.getElementById("location");
         loc.innerHTML = data.name + ", " + data.sys.country;
@@ -34,7 +36,16 @@ function showWeather(position) {
 }
 
 function toggleUnits() {
+    var temp = document.getElementById("temp");
+    var tempContents = temp.innerHTML;
+    var degrees = parseFloat(tempContents);
 
+    if (tempContents[tempContents.length - 1] == 'C') {
+        temp.innerHTML = (degrees * 9 / 5 + 32).toFixed(2) + 'F';
+    }
+    else {
+        temp.innerHTML = ((degrees - 32) * 5 / 9).toFixed(2) + 'C';
+    }
 }
 
 // handling errors function is taken from w3schools
