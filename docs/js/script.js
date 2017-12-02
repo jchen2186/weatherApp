@@ -72,25 +72,25 @@ function setBackground(weather) {
     
     switch (weather) {
         case 'Drizzle':
-            html.style.backgroundImage = 'url(../img/drizzle.jpg)';
+            html.style.backgroundImage = 'url(img/drizzle.jpg)';
             break;
         case 'Clear':
-            html.style.backgroundImage = 'url(../img/clear.jpg)';
+            html.style.backgroundImage = 'url(img/clear.jpg)';
             break;
         case 'Clouds':
-            html.style.backgroundImage = 'url(../img/clouds.jpg)';
+            html.style.backgroundImage = 'url(img/clouds.jpg)';
             break;
         case 'Mist':
-            html.style.backgroundImage = 'url(../img/mist.jpg)';
+            html.style.backgroundImage = 'url(img/mist.jpg)';
             break;
         case 'Rain':
-            html.style.backgroundImage = 'url(../img/rain.jpg)';
+            html.style.backgroundImage = 'url(img/rain.jpg)';
             break;
         case 'Snow':
-            html.style.backgroundImage = 'url(../img/snow.jpg)';
+            html.style.backgroundImage = 'url(img/snow.jpg)';
             break;
         case 'Thunderstorm':
-            html.style.backgroundImage = 'url(../img/thunderstorm.jpg)';
+            html.style.backgroundImage = 'url(img/thunderstorm.jpg)';
             break;
     }
 }
